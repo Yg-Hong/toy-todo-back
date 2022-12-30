@@ -13,14 +13,10 @@ import java.util.List;
 public class TestController {
 
   @GetMapping
-  public String testController() {
-    return "Hello World!";
-  }
+  public String testController() { return "Hello World!"; }
 
   @GetMapping("/testGetMapping")
-  public String testControllerWithPath() {
-    return "Hello World! testGetMapping ";
-  }
+  public String testControllerWithPath() { return "Hello World! testGetMapping "; }
 
   @GetMapping("/{id}")
   public String testControllerWithPathVariables(@PathVariable(required = false) int id) {
